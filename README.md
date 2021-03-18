@@ -1,16 +1,20 @@
-# views
+# U2FLUTTER
 
-To do app.
+## U2net Portrait test on flutter with colab-fastapi backend 
 
-## Getting Started
+### Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a testing app for https://github.com/xuebinqin/U-2-Net Portrait Model
 
-A few resources to get you started if this is your first Flutter project:
+### Initial Setup and Run
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+1. Clone the repository:
+```
+git clone https://github.com/abhk943/u2flutter.git
+```
+2. Upload the `U2_fastapi_backend.ipynb` and run it in a GPU runtime.
+3. We need [u2net_portrait.pth](https://github.com/xuebinqin/U-2-Net), add this to colab initial directory.
+4. Copy the ngrok server address as ```url``` and change ```url``` at 
+```lib/home.dart        Line:67```.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Launch the app and application should run successfully.
